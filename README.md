@@ -9,4 +9,4 @@ On the other hand, the Bayesian model proposed by Alkema et al. (2011) for ferti
 Simulations conclude that a three-parameter model can capture most of the variation in the fertility and mortality patterns observed. Models with more parameters, for most purposes, are not necessary and they may experience difficulties adapting such models to a small or data number.
 
 
-[mc2011_poster_beamer.pdf](https://github.com/jrcarob/RSS-2021/mc2011_poster_beamer.pdf)
+
