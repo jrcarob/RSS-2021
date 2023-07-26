@@ -1,0 +1,59 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/color/beamercolorthemewhale.sty,v 1.4 2007/01/28 20:48:24 tantau Exp $
+
+
+\mode<presentation>
+
+\definecolor{yaleblue}{rgb}{0.06, 0.3, 0.57}
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=yaleblue}
+\setbeamercolor*{palette secondary}{use=structure,fg=black,bg=yaleblue!60!white}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=black!90!white}
+\setbeamercolor*{palette quaternary}{fg=white,bg=yaleblue}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+  
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor{titlelike}{parent=palette secondary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor*{item}{fg=yaleblue!90!black}
+\setbeamercolor*{section}{fg=black,bg=yaleblue!80!black}
+\setbeamercolor*{subsection number projected}{fg=black,bg=yaleblue!70!white}
+
+\setbeamercolor{headline}{fg=white,bg=yaleblue}
+\setbeamercolor{logo in headline}{fg=black,bg=white}
+\setbeamercolor{title in headline}{fg=black}
+\setbeamercolor{author in headline}{fg=black}
+\setbeamercolor{institute in headline}{fg=black}
+\setbeamercolor{logo in headline}{fg=black,bg=white}
+\setbeamercolor{separation line}{bg=yaleblue}
+
+\setbeamercolor{footline}{fg=white,bg=yaleblue!80!black}
+% \setbeamerfont{footline}{size=\large}
+
+\setbeamercolor*{normal text}{fg=black,bg=white}
+
+\setbeamercolor*{block body}{bg=yaleblue!15!white,fg=black}
+\setbeamercolor*{block title}{fg=black,bg=yaleblue!60!white}
+% \setbeamerfont{block title}{size=\large,series=\bf}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{navigation symbols}{}
+
+\mode
+<all>

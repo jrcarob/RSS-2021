@@ -1,0 +1,180 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/color/beamercolorthemewhale.sty,v 1.4 2007/01/28 20:48:24 tantau Exp $
+
+
+\mode<presentation>
+
+\definecolor{eisvogel}{RGB}{0,137,147}
+\definecolor{blueuco}{rgb}{0.1, 0.1, 0.44}
+
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=eisvogel}
+\setbeamercolor*{palette secondary}{use=structure,fg=black,bg=eisvogel!60!white}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=black!90!white}
+\setbeamercolor*{palette quaternary}{fg=white,bg=eisvogel}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+  
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor{titlelike}{parent=palette secondary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor*{item}{fg=eisvogel!90!black}
+\setbeamercolor*{section}{fg=black,bg=eisvogel!80!black}
+\setbeamercolor*{subsection number projected}{fg=black,bg=eisvogel!70!white}
+
+\setbeamercolor{headline}{fg=white,bg=eisvogel}
+\setbeamercolor{logo in headline}{fg=eisvogel,bg=white}
+\setbeamercolor{title in headline}{fg=white}
+\setbeamercolor{date in headline}{fg=white}
+\setbeamercolor{event in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=white}
+\setbeamercolor{institute in headline}{fg=white}
+\setbeamercolor{logo in headline}{fg=eisvogel,bg=white}
+\setbeamercolor{separation line}{bg=eisvogel}
+
+\setbeamercolor{footline}{fg=white,bg=eisvogel!80!black}
+\setbeamerfont{footline}{size=\large}
+
+\setbeamercolor*{normal text}{fg=black,bg=white}
+
+\setbeamercolor*{block body}{bg=eisvogel!15!white,fg=black}
+\setbeamercolor*{block title}{fg=black,bg=eisvogel!60!white}
+\setbeamerfont{block title}{size=\large,series=\bf}
+
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{block begin}{
+  \vskip 2ex
+  \begin{beamercolorbox}[leftskip=1cm,colsep*=.75ex]{block title}%
+    \usebeamerfont*{block title}\insertblocktitle
+  \end{beamercolorbox}%
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[colsep*=.75ex,sep=.75ex,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+  }
+  \setbeamertemplate{block end}{
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{headline}{  
+  \leavevmode
+
+%   \begin{beamercolorbox}[wd=\paperwidth]{headline}
+%     \begin{columns}[T]
+%       
+%       \begin{column}{.74\paperwidth}
+%         \vskip2cm
+%         \begin{center}
+%           \raggedleft
+%           \usebeamercolor{title in headline}{\color{fg}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
+%           \usebeamercolor{author in headline}{\color{fg}\Huge{\insertauthor}\\[1ex]}
+%           \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
+%         \end{center}
+%       \end{column}
+%       \begin{column}{.25\paperwidth}
+%         \vskip1.5cm
+%         \begin{center}
+%           \includegraphics[width=.6\linewidth]{logo.png}
+%         \end{center}
+%         \vskip1.5cm
+%       \end{column}
+%       \begin{column}{.03\paperwidth}
+%       \end{column}
+%     \end{columns}
+%   \end{beamercolorbox}
+
+  \begin{columns}[T]
+  \column{.21\paperwidth}
+	   \begin{beamercolorbox}[wd=\columnwidth]{headline}
+		\centering
+		\vskip3.2cm
+		\includegraphics[width=0.75\linewidth]{ciencias.png}\\
+		%\Huge{\textcolor{white}{\textsc{Universidad\\ de C\'ordoba}}}
+		\vskip2.6cm
+	   \end{beamercolorbox}
+	\column{.60\paperwidth}
+	  \begin{beamercolorbox}[wd=\columnwidth,sep=0em]{headline}
+	  	\vskip1.4cm
+        \begin{center}
+         \usebeamercolor{event in headline}{\color{fg}\textbf{\large{\insertevent}}\\[1ex]}
+         \usebeamercolor{date in headline}{\color{fg}\LARGE{\insertdate}\\[1ex]}
+          \usebeamercolor{title in headline}{\color{fg}\textbf{\veryHuge{\inserttitle}}\\[1ex]}
+          \usebeamercolor{author in headline}{\color{fg}\Huge{\insertauthor}\\[1ex]}
+          \usebeamercolor{institute in headline}{\color{fg}\Large{\insertinstitute}\\[1ex]}
+        \end{center}
+	  \end{beamercolorbox}
+	\column{.21\paperwidth}
+	   \begin{beamercolorbox}[wd=\columnwidth]{headline}
+		\centering
+		\vskip1.22cm
+		\includegraphics[width=0.5\linewidth]{logo_UCO4.png}\\
+		\Huge{\textcolor{white}{\textsc{Universidad\\ de C\'ordoba}}}
+		\vskip2.65cm
+	   \end{beamercolorbox}
+
+  \end{columns}
+
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+ 
+  \begin{beamercolorbox}[ht=5.5em,leftskip=1cm]{footline}
+  \begin{minipage}[b]{8em}
+	\includegraphics[height=4em]{id.png}
+	\vspace{0.75em}
+  \end{minipage}
+  \begin{minipage}[b]{.3\columnwidth}
+	Jos\'e Rafael Caro Barrera\\
+	WoS Researcher ID: X-3318-2019\\
+	jrcaro@uco.es\\%\hspace{15cm} \includegraphics[height=5em]{RStudio.png}\\
+	Dept. of Statistics, Econometrics and Op. Research\\
+	University of C\'ordoba
+	\vspace{0.5em}
+  \end{minipage}
+  %%%% nuevo para los stickers
+   \begin{minipage}[b]{5em}
+   \includegraphics[height=5em]{RStudio.png}\includegraphics[height=5em]{ggplot2.png}\includegraphics[height=5em]{tidyverse.png}\includegraphics[height=5em]{dplyr.png}\includegraphics[height=5em]{TexShop.png}
+	\vspace{0.25em}
+  \end{minipage} %%%%%% final parte nueva
+  \hfill
+  \begin{minipage}[b]{.4\columnwidth}
+	\raggedleft
+	\textbf{https://github.com/jrcarob}\\
+	\vspace{2em}
+  \end{minipage}
+  \begin{minipage}[b]{6em}
+  	\includegraphics[height=5em]{frame.png}
+  	\vspace{0.25em}
+  \end{minipage}
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+}
+\mode
+<all>
