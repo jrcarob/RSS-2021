@@ -1,5 +1,4 @@
-# RSS-2021
-Royal Statistics Society Congress Manchester 2021
+# Royal Statistics Society Congress Manchester 2021
 
 The increasing of life expectancy, although a symptom of social progress, raises a challenge for governments, private pension plans and life insurers, due to its impact in health and pension costs.
 
